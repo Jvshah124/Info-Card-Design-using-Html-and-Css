@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Design</title>
+    <title>Info Card Design</title>
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,71 +20,63 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar">
-        <img src="images/vr-4530602_1280.png" class="logo" />
-
-        <nav>
-          <ul id="menu-list">
-            <li>
-              <a href="#">VR World</a>
-            </li>
-            <li>
-              <a href="#">VR World</a>
-            </li>
-
-            <li>
-              <a href="#">VR World</a>
-            </li>
-
-            <li>
-              <a href="#">VR World</a>
-            </li>
-          </ul>
-        </nav>
-        <i
-          class="fa-solid fa-bars"
-          class="menu-icon"
-          onclick="togglemenu()"
-        ></i>
-      </div>
-
-      <div class="row">
-        <div class="col-1">
-          <h2>DESTEK V5 <br />VR Headset</h2>
-
-          <h3>Exploring virtual reality for Beginners</h3>
-          <p>(Compatible/Generic)</p>
-          <h4>$33.3</h4>
-
-          <button type="button">
-            Buy Now <i class="fa-solid fa-arrow-right"></i>
-          </button>
+      <div class="card">
+        <div class="card-inside">
+          <img src="images/2150799853.jpg" alt="card image" class="card-img" />
         </div>
-        <div class="col-2">
-          <img
-            src="images/ai-generated-8055453_1280-removebg.png"
-            alt=""
-            class="headset"
-          />
 
-          <div class="vr-box"></div>
+        <h3 class="card-name">Sarah Jones</h3>
 
-          <div class="add-btn">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <p><small>Add to Cart</small></p>
+        <span class="card-profession"> Frontend Developer </span>
+
+        <!-- -----------Card Info ------------------- -->
+
+        <div class="info">
+          <div class="info-icon">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+
+          <div class="info-inside">
+            <img src="images/2150799853.jpg" alt="" class="info-img" />
+          </div>
+
+          <div class="info-data">
+            <h3 class="info-name">Amy Sarah Jones</h3>
+
+            <span class="info-profession">
+              Master in Frontend Development
+            </span>
+
+            <span class="info-location"> Metaverse - Dreamland </span>
+          </div>
+
+          <div class="info-socials">
+            <a href="#" class="info-social-link">
+              <span class="info-social-icon">
+                <i class="fab fa-twitter-square"></i>
+              </span>
+            </a>
+
+            <a href="#" class="info-social-link">
+              <span class="info-social-icon">
+                <i class="fab fa-github-square"></i>
+              </span>
+            </a>
+
+            <a href="#" class="info-social-link">
+              <span class="info-social-icon">
+                <i class="fab fa-instagram-square"></i>
+              </span>
+            </a>
+
+            <a href="#" class="info-social-link">
+              <span class="info-social-icon">
+                <i class="fab fa-facebook-square"></i>
+              </span>
+            </a>
           </div>
         </div>
       </div>
-
-      <div class="socials">
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
     </div>
-
-    <script src="main.js"></script>
   </body>
 </html>
