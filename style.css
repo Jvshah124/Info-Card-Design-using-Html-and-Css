@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fce4ec;
+  /* background-color: #fce4ec; */
 }
 
 ul {
@@ -37,8 +37,35 @@ a {
   box-shadow: -2px 3px 7px 0px rgba(0, 0, 0, 0.81);
   -webkit-box-shadow: -2px 3px 7px 0px rgba(0, 0, 0, 0.81);
   -moz-box-shadow: -2px 3px 7px 0px rgba(0, 0, 0, 0.81);
+  animation: rainbow 5s linear infinite;
 }
 
+@keyframes rainbow {
+  0% {
+    border: 3px solid rgb(161, 58, 58);
+  }
+  14% {
+    border: 3px solid rgb(134, 91, 13);
+  }
+  28% {
+    border: 3px solid rgb(179, 179, 47);
+  }
+  42% {
+    border: 3px solid rgb(17, 87, 17);
+  }
+  57% {
+    border: 3px solid rgb(29, 29, 142);
+  }
+  71% {
+    border: 3px solid rgb(50, 18, 74);
+  }
+  85% {
+    border: 3px solid rgb(177, 75, 177);
+  }
+  100% {
+    border: 3px solid rgb(77, 36, 36);
+  }
+}
 .card-inside {
   width: 133px;
   border-radius: 50%;
@@ -82,7 +109,7 @@ a {
   background-color: rgb(250, 248, 248);
   padding: 2.5rem 1.5rem 3.5rem;
   border-radius: 1rem 1rem 11rem 11rem;
-  clip-path: circle(16px at 292px 41px);
+  clip-path: circle(16px at 287px 41px);
   transition: clip-path 0.4s ease-in-out;
 }
 
